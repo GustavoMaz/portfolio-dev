@@ -12,3 +12,17 @@
   --mb-xl: 16rem;
 }
 
+p {
+  font-size: 1.5rem;
+  color: var(--color-text-body);
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.reverse-bg * {
+  background-color: var(--color-text-title);
+  color: var(--color-bg);
+}
