@@ -54,6 +54,14 @@ h2 {
   font-size: 5rem;
 }
 
+section h2, section h3 {
+  text-align: center;
+}
+
+.section-title {
+  margin-block-end: var(--mb-l);
+}
+
 .reverse-bg * {
   background-color: var(--color-text-title);
   color: var(--color-bg);

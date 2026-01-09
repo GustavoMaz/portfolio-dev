@@ -6,6 +6,9 @@ function WavePattern({ isFlipped = false }: { isFlipped?: boolean }) {
     <motion.div
       style={{
         translateX: "-12vw",
+        height: 'fit-content',
+        width: 'fit-content',
+        display: 'flex',
       }}
       animate={{
         x: `-40vw`,
