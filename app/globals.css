@@ -2,7 +2,7 @@
 
 :root {
   --color-bg: #FFF;
-  --color-bg-halftone: #F2F2F2;
+  --color-bg-midtone: #F2F2F2;
   --color-text-title: #000;
   --color-text-body: #4c4c4c;
   --color-primary: #0099FF;
@@ -25,6 +25,11 @@
 
 section {
   margin-block-end: var(--mb-xl);
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 a, .action {
