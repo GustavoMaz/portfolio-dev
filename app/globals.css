@@ -11,7 +11,7 @@
   --mb-s: 1rem;
   --mb-m: 2rem;
   --mb-l: 6rem;
-  --mb-xl: 16rem;
+  --mb-xl: 12rem;
 
   --font-text-body: 'Inter', sans-serif;
   --font-main-text: 'Reddit Sans Condensed', sans-serif;
@@ -24,7 +24,7 @@
 }
 
 section {
-  margin-block-end: var(--mb-xl);
+  margin-block-end: var(--mb-l);
   padding-inline: 2rem;
   display: flex;
   align-items: center;
@@ -63,15 +63,12 @@ h2 {
   font-size: 5rem;
 }
 
-section h2, section h3 {
+.section-title {
+  margin-block-end: var(--mb-l);
   text-align: center;
 }
 
-.section-title {
-  margin-block-end: var(--mb-l);
-}
-
-.reverse-bg * {
+.reverse-bg {
   background-color: var(--color-text-title);
   color: var(--color-bg);
 }

@@ -1,3 +1,7 @@
+#about {
+  margin-block-end: var(--mb-xl);
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,42 +28,12 @@
   background-color: inherit;
   color: inherit;
 }
-/* 
-.drawings-container.about-card {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-
-  & .img-tentacles {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    width: clamp(250px, 25vw, 500px);
-  }
-
-  & .img-slash {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    width: clamp(150px, 25vw, 300px);
-  }
-
-  & .img-gladiator {
-    grid-column-start: 4;
-    grid-row-start: 4;
-    width: clamp(100px, 25vw, 200px);
-  }
-} */
 
 .drawings-container img {
   max-width: 200px;
 }
 
 .drawings-container.about-card {
-  /* align-items: center;
-  flex-direction: row-reverse;
-  justify-content: center;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: 1fr;
@@ -94,32 +68,6 @@ ul {
   .skills-container {
     grid-column: span 2;
   }
-
-  /* .drawings-container.about-card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-  }
-
-  .img-tentacles {
-    min-width: 75%;
-    align-self: flex-end;
-  }
-
-  .img-slash {
-    position: relative;
-    top: -15%;
-    align-self: flex-start;
-    width: 50%;
-  }
-
-  .img-gladiator {
-    align-self: flex-end;
-    top: -15%;
-    position: relative;
-  }
-*/
 
   .drawings-container.about-card {
     grid-template-rows: repeat(4, 50px) 66px;

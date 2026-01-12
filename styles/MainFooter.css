@@ -1,0 +1,33 @@
+.footer-container {
+  overflow-x: hidden;
+  position: static;
+  bottom: 0;
+  height: fit-content;
+
+  & footer {
+    padding-block-end: 3rem;
+    box-shadow: 0 -2px 0 0 var(--color-text-title);
+  }
+
+  & .section-title {
+    margin-block-end: var(--mb-m);
+  }
+}
+
+.contact-list {
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100vw;
+  color: var(--color-text-title);
+  font-size: 3rem;
+  padding: 1rem;
+}

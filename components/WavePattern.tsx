@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-function WavePattern({ isFlipped = false }: { isFlipped?: boolean }) {
+function WavePattern({ isFlipped = false, colorHex = '#0099FF' }: { isFlipped?: boolean, colorHex?: string }) {
   return (
     <motion.div
       style={{
@@ -47,7 +47,7 @@ function WavePattern({ isFlipped = false }: { isFlipped?: boolean }) {
                 L 0 0
                 Z
               "
-            fill="#0099ff"
+            fill={colorHex}
           />
         </svg>
       ) : (
@@ -81,7 +81,7 @@ function WavePattern({ isFlipped = false }: { isFlipped?: boolean }) {
               L 0 100 
               Z
             "
-            fill="#0099ff"
+            fill={colorHex}
           ></path>
         </svg>
       )}
