@@ -22,14 +22,14 @@ function About() {
         </div>
         <div className="drawings-container about-card">
           <img
-            src="tentacles.png"
-            alt="Cavaleiro em uma masmorra"
-            className="img-tentacles"
-          />
-          <img
             src="slash.gif"
             alt="Sprite de samurai atacando com a espada"
             className="img-slash"
+          />
+          <img
+            src="tentacles.png"
+            alt="Cavaleiro em uma masmorra"
+            className="img-tentacles"
           />
           <img
             src="gladiator.gif"
@@ -39,19 +39,19 @@ function About() {
         </div>
         <div className="about-card medals-container">
           <p>
-            A matemática sempre foi minha matéria preferida na escola, o que, ao
-            longo dos anos, me levou a me tornar{" "}
+            Durante o Ensino Médio, conquistei os títulos de{" "}
             <a href="#" title="Ver certificados" className="certificate-link">
-              <strong>bimedalhista nacional da OBMEP </strong>
+              <strong>bimedalhista nacional da <span title="Olimpíadas Brasileiras de Matemática das Escolas Públicas">OBMEP</span></strong>
             </a>
-            &#40;Olímpiadas Brasileiras de Matemática&#41; e{" "}
+            {" "} e {" "}
+            {/* &#40;Olímpiadas Brasileiras de Matemática&#41; e */}
             <a href="#" title="Ver certificado" className="certificate-link">
-              <strong>medalhista de ouro da OBMF </strong>
+              <strong>medalhista de ouro da <span title="Olimpíadas Brasileiras de Matemática Financeira">OBMF</span></strong>
             </a>
-            &#40;Olimpíadas Brasileiras de Matemática Financeira&#41; a nível
-            nacional, além da{" "}
+            {/* &#40;Olimpíadas Brasileiras de Matemática Financeira&#41; a nível */}
+            , além da{" "}
             <a href="#" title="Ver certificado" className="certificate-link">
-              <strong>conclusão do PIC Júnior</strong>
+              <strong>conclusão do <span title="Projeto de Iniciação Científica Júnior">PIC Júnior</span></strong>
             </a>
             , programa que desenvolve as habilidades de resolução de problemas,
             lógica e algoritmos.
@@ -64,6 +64,7 @@ function About() {
             tenho muita dificuldade em me adaptar a diferentes ambientes de
             desenvolvimento. Entretanto, as ferramentas principais que escolho
             para usar nos meus projetos são:
+          </p>
             <ul className="skills-list">
               <li className="skill-item">React</li>
               <li className="skill-item">Vue.js</li>
@@ -72,9 +73,10 @@ function About() {
               <li className="skill-item">Framer Motion</li>
               <li className="skill-item">Git</li>
             </ul>
-            Também já tive contato com ferramentas de back-end, como PHP e
-            MySQL.
-          </p>
+            <p>
+              Também já tive contato com ferramentas de back-end, como PHP e
+              MySQL.
+            </p>
         </div>
       </div>
     </section>

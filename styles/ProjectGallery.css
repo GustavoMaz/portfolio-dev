@@ -31,18 +31,15 @@
   align-items: end;
   flex-direction: column;
   gap: 2rem;
-
-
-  &:nth-of-type(even) {
-    .project-info-container {
-      flex-direction: row-reverse;
-    }
-  } 
 }
 
 .project-info-container {
   display: flex;
   gap: 4rem;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 .project-title {
@@ -54,4 +51,24 @@
   padding-block: 1rem;
   padding-inline: 2.5rem;
   border-radius: 100vw;
+}
+
+@media only screen and (max-width: 1100px) {
+  #projects {
+    padding-inline: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-card .project-info-container {
+    flex-direction: column-reverse;
+  }
+
+  .project-thumbnail {
+    object-fit: cover;  
+    max-height: 50vh;
+    width: 100%;
+  }
 }

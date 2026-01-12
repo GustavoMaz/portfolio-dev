@@ -51,7 +51,7 @@ h1, h2 {
   font-weight: 900;
 } 
 
-p, .subtitle {
+p, .subtitle, ul {
   text-transform: none;
   font-size: 1.5rem;
   color: var(--color-text-body);
@@ -71,4 +71,10 @@ h2 {
 .reverse-bg {
   background-color: var(--color-text-title);
   color: var(--color-bg);
+}
+
+@media only screen and (max-width: 1000px) {
+  section {
+    padding-inline: 1rem;
+  }
 }
