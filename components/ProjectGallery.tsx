@@ -1,5 +1,6 @@
 import '@/styles/ProjectGallery.css'
 import ProjectCard from './ProjectCard'
+import projects from "@/data/projects.json";
 
 function ProjectGallery() {
   return (
@@ -9,24 +10,9 @@ function ProjectGallery() {
         <h3 className="subtitle">Veja alguns dos meus projetos recentes &#8282;&#41;</h3>
       </header>
       <div className='projects-container'>
-        <ProjectCard
-          title='Título'
-          description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eveniet tempore itaque voluptatem temporibus quo! Architecto at quod asperiores nam. Ea ipsum quis similique optio! Commodi corporis ducimus libero veniam!'
-          url='#'
-          thumbnailPath='https://placehold.co/500x400'
-        ></ProjectCard>
-        <ProjectCard
-          title='Título'
-          description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eveniet tempore itaque voluptatem temporibus quo! Architecto at quod asperiores nam. Ea ipsum quis similique optio! Commodi corporis ducimus libero veniam!'
-          url='#'
-          thumbnailPath='https://placehold.co/500x400'
-        ></ProjectCard>
-        <ProjectCard
-          title='Título'
-          description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eveniet tempore itaque voluptatem temporibus quo! Architecto at quod asperiores nam. Ea ipsum quis similique optio! Commodi corporis ducimus libero veniam!'
-          url='#'
-          thumbnailPath='https://placehold.co/500x400'
-        ></ProjectCard>
+      {projects.map(project => (
+        <ProjectCard key={project.id} {...project} />
+      ))}
       </div>
     </section>
   )

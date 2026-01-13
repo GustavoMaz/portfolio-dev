@@ -9,7 +9,7 @@ function homeHeader() {
         }}
       >
         <WavePattern isFlipped/>
-        <header className={styles.container}>
+        <header className={styles.container} id="home">
           <h1 className={styles['main-title']}>Gustavo <br /> Mazurkiewitz</h1>
           <h2 className={styles.subtitle}>Desenvolvedor</h2>
         </header>

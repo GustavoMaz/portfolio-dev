@@ -31,15 +31,25 @@
   align-items: end;
   flex-direction: column;
   gap: 2rem;
+
+  &:hover {
+    img, .project-info {
+      scale: 1.02;
+    }
+  }
 }
 
 .project-info-container {
   display: flex;
   gap: 4rem;
+}
 
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
+.project-info {
+  transition: scale .3s;
+}
+
+.reverse-order {
+  flex-direction: row-reverse;
 }
 
 .project-title {
@@ -49,12 +59,46 @@
 
 .project-thumbnail {
   border-radius: 16px;
+  aspect-ratio: 5/4;
+  object-fit: cover;
+  max-width: 500px;
+  box-shadow: 2px 2px 16px 0px #616161;
+  transition: scale .3s;
+
 }
 
 .action-button {
   padding-block: 1rem;
   padding-inline: 2.5rem;
   border-radius: 100vw;
+  border: 2px solid var(--color-primary);
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.action-button::before {
+  position: absolute;
+  content: "";
+  background: var(--color-bg);
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+.action-button:hover {
+  color: var(--color-primary);
+}
+
+.action-button:before {
+  right: 100%;
+  top: 0;
+  transition: 0.3s all;
+}
+
+.action-button:hover::before {
+  right: 0;
 }
 
 @media only screen and (max-width: 1100px) {

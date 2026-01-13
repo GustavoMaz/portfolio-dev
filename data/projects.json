@@ -1,20 +1,23 @@
 [
   {
-    "title": "Costs",
-    "description": "Projeto desenvolvido com React e Tailwind. Trata-se de um gerenciador de projetos que permite ao usuário controlar os custos e os serviços necessários para cada projeto. O usuário pode criar, editar e excluir projetos e serviços. Para fins de aprendizado, armazenei tudo em um banco de dados rodando em um servidor local, para que as informações sejam salvas mesmo após o navegador ser fechado.",
-    "image": "/costs.jpg",
-    "demo": "/"
-  },
-  {
     "title": "Formulário multi-passo",
     "description": "Um formulário complexo de múltiplas etapas desenvolvido apenas com HTML, CSS e JavaScript vanilla, a fim de desafiar meu conhecimento de front-end sem depender de frameworks. Os assets do projeto são propriedade do site Frontend Mentor.",
-    "image": "/multi-step-form.jpg",
-    "demo": "/"
+    "thumbnailPath": "/multi-step-form.jpg",
+    "url": "https://gustavomaz.github.io/multi-step-form",
+    "id": 0
+  },
+  {
+    "title": "Costs",
+    "description": "Projeto desenvolvido com React e Tailwind. Trata-se de um gerenciador de projetos que permite ao usuário controlar os custos e os serviços necessários para cada projeto. O usuário pode criar, editar e excluir projetos e serviços. Para fins de aprendizado, armazenei tudo em um banco de dados rodando em um servidor local, para que as informações sejam salvas mesmo após o navegador ser fechado.",
+    "thumbnailPath": "/costs.jpg",
+    "url": "https://github.com/GustavoMaz/costs",
+    "id": 1
   },
   {
     "title": "Guia de viagens",
     "description": "É um site para uma empresa fictícia de turismo, que apresenta diversas atividades para o usuário em forma de cards organizados por seções. Desenvolvi esse projeto do zero em cerca de duas semanas, durante as férias de inverno do colégio. Queria me desafiar a iniciar e finalizar um projeto completo dentro desse período. Foi também uma boa prática de Vue.js e componentização no geral.",
-    "image": "/travel-guide.jpg",
-    "demo": "/"
+    "thumbnailPath": "/travel-guide.jpg",
+    "url": "https://gustavomaz.github.io/travel-guide/",
+    "id": 2
   }
 ]

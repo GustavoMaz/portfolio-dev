@@ -9,7 +9,7 @@ function Navigation() {
         <nav className='container'>
           <ul className='nav-list'>
             <li className='nav-item'>
-              <a className='nav-link-home nav-link' href="#">
+              <a className='nav-link-home nav-link' href="#home">
                 <AiOutlineHome />
               </a>
             </li>
