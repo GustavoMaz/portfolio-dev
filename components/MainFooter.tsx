@@ -11,7 +11,7 @@ function MainFooter() {
       }}
     >
       <WavePattern colorHex="000" />
-      <footer className="reverse-bg">
+      <footer className="reverse-bg" id="contact">
         <h2 className="section-title">Entre em contato</h2>
         <nav className="contact-container">
           <ul className="contact-list">
@@ -20,6 +20,7 @@ function MainFooter() {
             <li><a href="#" rel="external" className="contact-link"><AiFillPhone></AiFillPhone></a></li>
           </ul>
         </nav>
+        <div className="copyright">Gustavo Mazurkiewitz &copy; 2026</div>
       </footer>
     </div>
   );

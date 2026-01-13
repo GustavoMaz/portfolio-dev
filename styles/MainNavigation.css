@@ -35,13 +35,13 @@
   flex-direction: column;
   justify-content: center;
   height: fit-content;
-  
 }
 
-.nav-link, .nav-link-home {
+.nav-link, .nav-link {
   margin-inline: 2rem;
   background-color:transparent;
   padding-block: 1rem;
+  cursor: pointer;
 }
 
 .nav-link-home {
@@ -104,12 +104,12 @@
     border-radius: 0;
     border-bottom-right-radius: 16px;
     height: 100vh;
-    padding-inline: 1rem;
+    padding-inline: 0rem;
   }
 
   .nav-link {
     margin-inline: 0;
-    padding-inline: 1rem;
+    padding-inline: 1rem 2rem;
   }
 
   .active ~ .container {

@@ -23,6 +23,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--mb-l);
+}
+
 section {
   margin-block-end: var(--mb-l);
   padding-inline: 2rem;
@@ -32,7 +37,7 @@ section {
 
 }
 
-a, .action {
+a, .action, button {
   text-decoration: none;
   color: var(--color-bg);
   background-color: var(--color-primary);
@@ -57,15 +62,20 @@ p, .subtitle, ul {
   color: var(--color-text-body);
   font-weight: 400;
   font-family: var(--font-text-body);
+  margin-block-start: var(--mb-s);
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: clamp(3rem, 10vw, 5rem);
 }
 
 .section-title {
   margin-block-end: var(--mb-l);
   text-align: center;
+  
+  & *:first-child {
+    line-height: .9em;
+  }
 }
 
 .reverse-bg {

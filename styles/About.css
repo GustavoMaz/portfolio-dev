@@ -13,7 +13,8 @@
 
 .about-card {
   background-color: var(--color-bg-midtone);
-  padding: 2rem;
+  padding-block: 2rem;
+  padding-inline: 2vw;
   border-radius: 1rem;
 
   display: flex;
@@ -35,11 +36,6 @@
 }
 
 .drawings-container.about-card {
-  /* display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: 1fr;
-  justify-content: center; */
-
   gap: 2rem;
   display: flex;
   flex-direction: row-reverse;
@@ -73,6 +69,10 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .about-card {
+    padding: 2rem;
+  }
+  
   .life-story-container {
     grid-column: span 2;
   }

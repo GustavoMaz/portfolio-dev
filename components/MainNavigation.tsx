@@ -13,9 +13,9 @@ function Navigation() {
                 <AiOutlineHome />
               </a>
             </li>
-            <li className='nav-item'><a className='nav-link' href="#">Projetos</a></li>
-            <li className='nav-item'><a className='nav-link' href="#">Sobre Mim</a></li>
-            <li className='nav-item'><a className='nav-link' href="#">Contato</a></li>
+            <li className='nav-item'><a className='nav-link' href="#projects">Projetos</a></li>
+            <li className='nav-item'><a className='nav-link' href="#about">Sobre Mim</a></li>
+            <li className='nav-item'><a className='nav-link' href="#contact">Contato</a></li>
           </ul>
         </nav>
     </>

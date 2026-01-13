@@ -3,7 +3,7 @@ import WavePattern from "@/components/WavePattern";
 
 function homeHeader() {
   return (
-      <div
+      <div className={styles['header-container']}
         style={{
           overflowX: 'hidden'
         }}
