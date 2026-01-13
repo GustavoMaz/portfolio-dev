@@ -30,6 +30,7 @@
   /* background-color: var(--color-primary); */
   background-color: hsla(204, 100%, 50%, 0.9);
   pointer-events: all;
+  margin: 0;
 }
 
 .nav-item, .nav-link-home {
@@ -47,11 +48,12 @@
 
   transition-property: scale letter-spacing;
   transition-duration: .3s;
-  &:hover {
+}
+
+.nav-link:hover, .nav-toggle:hover {
     scale: 1.1;
     letter-spacing: 1px;
   }
-}
 
 .nav-link-home {
   font-size: 2rem;
@@ -77,6 +79,12 @@
     display: block;
   }
 
+  .nav-link-home {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
   .nav-toggle {
     display: flex;
     flex-direction: column;
@@ -84,6 +92,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: scale .3s;
   }
 
   .nav-toggle span {
@@ -118,11 +127,15 @@
 
   .nav-link {
     margin-inline: 0;
-    padding-inline: 1rem 2rem;
+    padding-inline: 2rem 4rem;
+  }
+
+  .nav-link-home {
+    padding-inline: 1rem;
+    padding-block: 1rem;
   }
 
   .active ~ .container {
     left: 0;
-
   }
 }
